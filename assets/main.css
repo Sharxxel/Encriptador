@@ -1,0 +1,263 @@
+* { 
+  padding:0;
+  margin:0; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*:focus  {  
+  outline: none;  
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, textarea {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  background:transparent;
+}
+
+html, body{
+    background-color: #F3F5FC;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0a3871;
+    width: 100%;
+    height: 100%;
+}
+main{
+  height:90%;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  min-height: 500px;
+}
+
+button{
+  border-radius: 15px;
+  padding: 24px;
+  cursor: pointer;
+}
+
+textarea{
+  width:80%;
+  resize: none;
+  font-size: 24px;
+}
+.boton-blue{
+  background-color: #0a3871;
+  color: #fff;
+  border:none;
+}
+.boton-white{
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #0a3871;
+}
+
+.left{
+  width:70%;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.left > .logo{
+  width:20%;
+  }
+
+.left > .logo > img{
+  margin:15% 30%;
+  }
+
+.left > .textarea{
+  width:80%;
+  height:60%;
+}
+
+.left > .textarea > p{
+  background-image: url("img/warning.svg");
+  background-repeat: no-repeat;
+  height:16px;
+  color: #495057;
+  font-size: 12px;
+  padding: 1px 0 0 20px;
+  margin:15px;
+}
+
+.left > .textarea > .botones-en{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.left > .textarea > .botones-en > button{
+  width:44%;
+}
+
+.left > .textarea > #codificar{
+  background-color: #F3F5FC;
+  margin:10%;
+  min-height:340px;
+}
+
+.right{
+  width:30%;
+}
+
+.right > .box-right{
+  display:none;
+  border-radius: 32px;
+  background-color: #fff;
+  margin:10%; 
+}
+
+.right > #oculto{
+  border-radius: 32px;
+  background-color: #fff;
+  margin:10%;
+  height: 500px;
+  padding: 10%;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+}
+
+.right > #oculto > p{
+  margin: 20px 0 ;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.right > #oculto > img{
+  width: 100%;
+}
+
+.right > .box-right > .botones-right{
+  width:80%;
+  padding:10%;
+}
+
+.right > .box-right > #codificado{
+  padding: 10%;
+  min-height: 400px;
+  width: 80%;
+  resize: none;
+  font-size: 24px;
+}
+.footer {
+  padding:2%;
+}
+.footer p{
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+  main{
+    width:100%;
+    height:90%;
+    display: block;
+  }
+  .left{
+    width:100%;
+  }
+  .left > .logo{
+    width:100%;
+  }
+  .left > .logo > img{
+    margin:3%;
+    }
+  .left > .textarea{
+    width:100%;
+    
+  }
+  .left > .textarea > #codificar{
+    margin:10%;
+    height: auto;
+  }
+  .left > .textarea > .botones-en > button{
+    width:46%;
+    margin: 1%;
+  }
+  .right{
+    width:100%;
+  }
+  .right > .box-right{
+    margin:5%; 
+  }
+  .right > #oculto{
+    margin:10%;
+    padding: 5%;
+    height: auto;
+  }
+  .right > #oculto > p{
+    margin: 0 0 10px 0 ;
+  }
+  .right > #oculto > img{
+    display:none;
+  }
+  .right > .box-right > #codificado{
+    padding: 10%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 600px) { 
+  main{
+    width:100%;
+    height:90%;
+    display: block;
+  }
+  .left{
+    width:100%;
+  }
+  .left > .logo{
+    width:100%;
+  }
+  .left > .logo > img{
+    margin:3%;
+    }
+  .left > .textarea{
+    width:100%;
+    
+  }
+  .left > .textarea > #codificar{
+    margin:10%;
+  }
+  .left > .textarea > .botones-en > button{
+    width:96%;
+    margin: 1%;
+  }
+  .right{
+    width:100%;
+  }
+  .right > #oculto{
+    margin:10%;
+    padding: 5%;
+    height: auto;
+  }
+  .right > .box-right{
+    margin:5%; 
+  }
+  .right > .box-right > #codificado{
+    padding: 10%;
+    height: auto;
+  }
+}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Encriptador - ORACLE + ALURA LATAM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/main.css">
+    <script type="text/javascript" src="assets/func.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <div class="logo">
+          <img src="assets/img/logo.svg">
+        </div>
+        <div class="textarea">
+          <textarea id="codificar" placeholder="Ingrese el texto aqui" required></textarea>
+          <p>Solo palabras en minuscula y sin acentos.</p>
+          <div class="botones-en">
+            <button class="boton-blue" onClick="encriptar()" type="button" name="button">Encriptar</button>
+            <button class="boton-white" onClick="desencriptar()" type="button" name="button">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <div class="box-right"> 
+          <div id="codificado"></div>
+            <div class="botones-right">
+              <button onClick="copiar()" class="boton-white" type="button" name="button">Copiar</button>
+            </div>
+        </div>
+        <div id="oculto">
+          <img src="assets/img/doll.svg">
+          <p>Ningun mensaje fue encontrado.</p>
+          Ingresa el texto que desees encriptar o desencriptar.
+        </div>
+      </section>
+      <div class="footer">
+        <p>Developed by Alura | ORACLE</p>
+      </div>
+    </main>
+    
+  </body>
+</html>

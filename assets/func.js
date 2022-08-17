@@ -1,14 +1,6 @@
 let letras = ["a","e","i","o","u"];
 let encriptado = ["ai","enter","imes","ober","ufat"];
 
-function checkType(words) {
-
-  words = String(words).trim();
-
-  const regxs = "/^[a-z0-9 ]+$/";
-  if (regxs.lower.test(words)) return '0';
-  }
-
 function encriptar(){
   let texto = document.getElementById("codificar").value;
   if(/^[a-z0-9 ]+$/.test(texto)){
